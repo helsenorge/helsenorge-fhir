@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="hn-contactdetail" />
+  <url value="http://helsenorge.no/fhir/StructureDefinition/hn-contactdetail" />
+  <name value="HNContactDetail" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <type value="ContactDetail" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ContactDetail" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="ContactDetail.extension">
+      <path value="ContactDetail.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="ContactDetail.extension:description">
+      <path value="ContactDetail.extension" />
+      <sliceName value="description" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://helsenorge.no/fhir/StructureDefinition/hn-description" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sdf-canbeperformedby" />
+  <url value="http://helsenorge.no/fhir/StructureDefinition/sdf-canbeperformedby" />
+  <name value="CanBePerformedBy" />
+  <status value="draft" />
+  <description value="1 | 2&#xD;&#xA;http://ehelse.no/fhir/ValueSet/CanBePerformedBy&#xD;&#xA;&#xD;&#xA;1 = Default behavior (anyone can perform the task)&#xD;&#xA;2 = The task must be performed personally" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Task" />
+  </context>
+  <context>
+    <type value="element" />
+    <expression value="Questionnaire" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://helsenorge.no/fhir/StructureDefinition/sdf-canbeperformedby" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="Coding" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
