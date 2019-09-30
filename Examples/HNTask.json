@@ -1,0 +1,100 @@
+{
+    "resourceType": "Task",
+    "extension": [
+        {
+            "url": "http://example.org/fhir/StructureDefinition/sdf-task-accessibilitytoresponse",
+            "valueCoding": {
+                "system": "http://ehelse.no/fhir/ValueSet/AccessibilityToResponse",
+                "code": "1",
+                "display": "Default behavior"
+            }
+        },
+        {
+            "url": "http://helsenorge.no/fhir/StructureDefinition/hn-task-contactdetail",
+            "valueContactDetail": {
+                "extension": [
+                    {
+                        "url": "http://helsenorge.no/fhir/StructureDefinition/hn-description",
+                        "valueString": "Ved uklarheter med skjemaet eller annet kontakt SiO."
+                    }
+                ],
+                "name": "SiO",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "+4722853200"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "http://helsenorge.no/fhir/StructureDefinition/sdf-task-canbeperformedby",
+            "valueCoding": {
+                "system": "http://ehelse.no/fhir/ValueSet/CanBePerformedBy",
+                "code": "1",
+                "display": "Default behavior"
+            }
+        },
+        {
+            "url": "http://helsenorge.no/fhir/StructureDefinition/hn-task-questionnairename",
+            "valueString": "SIO973"
+        },
+        {
+            "url": "http://helsenorge.no/fhir/StructureDefinition/hn-task-title",
+            "valueString": "Skjema <something> fra SIO"
+        }
+    ],
+    "instantiatesUri": "https://minhelse.helsenorge.no/skjemautfyller?Query=Questionnaire%3Fname%3DHV-IIFJ-1",
+    "status": "requested",
+    "intent": "plan",
+    "priority": "routine",
+    "description": "Vær vennlig å fyll ut vedlagte skjema.",
+    "authoredOn": "2019-09-30T13:29:16.3443611+02:00",
+    "lastModified": "2019-09-30T13:29:16.6651125+02:00",
+    "requester": {
+        "type": "Organization",
+        "identifier": {
+            "system": "2.16.578.1.12.4.1.2.101",
+            "value": "948554062"
+        },
+        "display": "Studentsamskipnaden i Oslo og Akershus"
+    },
+    "owner": {
+        "type": "Patient",
+        "identifier": {
+            "system": "2.16.578.1.12.4.1.4.1",
+            "value": "13116900216"
+        },
+        "display": "Line Danser"
+    },
+    "restriction": {
+        "extension": [
+            {
+                "url": "http://helsenorge.no/fhir/StructureDefinition/hn-task-deadline",
+                "valueDateTime": "2019-10-14T11:29:16.6679554+00:00"
+            }
+        ],
+        "period": {
+            "end": "2019-10-21T13:29:16.6680471+02:00"
+        },
+        "recipient": [
+            {
+                "extension": [
+                    {
+                        "url": "http://ehelse.no/fhir/StructureDefinition/sdf-endpoint",
+                        "valueReference": {
+                            "reference": "http://skjemakatalog.ehelse.no/api/v1/Endpoint/<id>",
+                            "display": "SiO skjemamottak"
+                        }
+                    }
+                ],
+                "type": "Organization",
+                "identifier": {
+                    "system": "2.16.578.1.12.4.1.2.101",
+                    "value": "948554062"
+                },
+                "display": "Studentsamskipnaden i Oslo og Akershus"
+            }
+        ]
+    }
+}
