@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="sdf-canbeperformedby" />
-  <url value="http://ehelse.no/fhir/StructureDefinition/sdf-canbeperformedby" />
-  <name value="CanBePerformedBy" />
+  <id value="hn-task-title" />
+  <url value="http://helsenorge.no/fhir/StructureDefinition/hn-task-title" />
+  <name value="Title" />
   <status value="draft" />
-  <description value="1 | 2&#xD;&#xA;http://ehelse.no/fhir/ValueSet/CanBePerformedBy&#xD;&#xA;&#xD;&#xA;1 = Default behavior (anyone can perform the task)&#xD;&#xA;2 = The task must be performed personally" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -16,10 +15,6 @@
   <context>
     <type value="element" />
     <expression value="Task" />
-  </context>
-  <context>
-    <type value="element" />
-    <expression value="Questionnaire" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -172,7 +167,7 @@
           </extension>
         </code>
       </type>
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sdf-canbeperformedby" />
+      <fixedString value="http://helsenorge.no/fhir/StructureDefinition/hn-task-title" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -191,7 +186,7 @@
         <max value="1" />
       </base>
       <type>
-        <code value="Coding" />
+        <code value="string" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -215,12 +210,12 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://ehelse.no/fhir/StructureDefinition/sdf-canbeperformedby" />
+      <fixedString value="http://helsenorge.no/fhir/StructureDefinition/hn-task-title" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <type>
-        <code value="Coding" />
+        <code value="string" />
       </type>
     </element>
   </differential>

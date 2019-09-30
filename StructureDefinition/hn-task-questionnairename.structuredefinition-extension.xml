@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="sdf-task-deadline" />
-  <url value="http://helsenorge.no/fhir/StructureDefinition/sdf-task-deadline" />
-  <name value="Deadline" />
+  <id value="hn-task-questionnairename" />
+  <url value="http://helsenorge.no/fhir/StructureDefinition/hn-task-questionnairename" />
+  <name value="QuestionnaireName" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <mapping>
@@ -167,7 +167,7 @@
           </extension>
         </code>
       </type>
-      <fixedString value="http://helsenorge.no/fhir/StructureDefinition/sdf-task-deadline" />
+      <fixedString value="http://helsenorge.no/fhir/StructureDefinition/hn-task-questionnairename" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -186,7 +186,7 @@
         <max value="1" />
       </base>
       <type>
-        <code value="date" />
+        <code value="string" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -210,12 +210,12 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://helsenorge.no/fhir/StructureDefinition/sdf-task-deadline" />
+      <fixedString value="http://helsenorge.no/fhir/StructureDefinition/hn-task-questionnairename" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <type>
-        <code value="date" />
+        <code value="string" />
       </type>
     </element>
   </differential>
