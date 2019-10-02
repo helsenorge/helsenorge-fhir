@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="hn-description" />
-  <url value="http://helsenorge.no/fhir/StructureDefinition/hn-description" />
-  <name value="Description" />
+  <id value="hn-task-supportsrepresentation" />
+  <url value="http://example.org/fhir/StructureDefinition/hn-task-supportsrepresentation" />
+  <name value="SupportsRepresentation" />
   <status value="draft" />
-  <description value="An extension of type string representing a description that can be used for any resource or data type in the helsenorge domain." />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -15,11 +14,7 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="Resource" />
-  </context>
-  <context>
-    <type value="element" />
-    <expression value="Element" />
+    <expression value="Task" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -172,7 +167,7 @@
           </extension>
         </code>
       </type>
-      <fixedString value="http://helsenorge.no/fhir/StructureDefinition/hn-description" />
+      <fixedString value="http://example.org/fhir/StructureDefinition/hn-task-supportsrepresentation" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -180,9 +175,9 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <short value="Value of extension is of type string" />
-      <definition value="Value of extension - must be of type string" />
-      <comment value="A string" />
+      <short value="Value of extension" />
+      <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
+      <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
       <base>
@@ -191,7 +186,7 @@
         <max value="1" />
       </base>
       <type>
-        <code value="string" />
+        <code value="boolean" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -215,15 +210,12 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://helsenorge.no/fhir/StructureDefinition/hn-description" />
+      <fixedString value="http://example.org/fhir/StructureDefinition/hn-task-supportsrepresentation" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <short value="Value of extension is of type string" />
-      <definition value="Value of extension - must be of type string" />
-      <comment value="A string" />
       <type>
-        <code value="string" />
+        <code value="boolean" />
       </type>
     </element>
   </differential>

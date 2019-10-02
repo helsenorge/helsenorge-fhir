@@ -582,6 +582,96 @@
         <map value="N/A" />
       </mapping>
     </element>
+    <element id="Task.extension:descriptionAboutReceivers">
+      <path value="Task.extension" />
+      <sliceName value="descriptionAboutReceivers" />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://helsenorge.no/fhir/StructureDefinition/hn-description" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="Extension" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Task.extension:supportsRepresentation">
+      <path value="Task.extension" />
+      <sliceName value="supportsRepresentation" />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/hn-task-supportsrepresentation" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="Extension" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
     <element id="Task.modifierExtension">
       <path value="Task.modifierExtension" />
       <slicing>
@@ -2197,6 +2287,51 @@
         <map value="N/A" />
       </mapping>
     </element>
+    <element id="Task.restriction.extension:reminder">
+      <path value="Task.restriction.extension" />
+      <sliceName value="reminder" />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/hn-task-reminder" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="Extension" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
     <element id="Task.restriction.modifierExtension">
       <path value="Task.restriction.modifierExtension" />
       <short value="Extensions that cannot be ignored even if unrecognized" />
@@ -3491,6 +3626,25 @@
         <profile value="http://helsenorge.no/fhir/StructureDefinition/hn-task-title" />
       </type>
     </element>
+    <element id="Task.extension:descriptionAboutReceivers">
+      <path value="Task.extension" />
+      <sliceName value="descriptionAboutReceivers" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://helsenorge.no/fhir/StructureDefinition/hn-description" />
+      </type>
+    </element>
+    <element id="Task.extension:supportsRepresentation">
+      <path value="Task.extension" />
+      <sliceName value="supportsRepresentation" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/hn-task-supportsrepresentation" />
+      </type>
+    </element>
     <element id="Task.restriction.extension">
       <path value="Task.restriction.extension" />
       <slicing>
@@ -3504,11 +3658,19 @@
     <element id="Task.restriction.extension:deadline">
       <path value="Task.restriction.extension" />
       <sliceName value="deadline" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://helsenorge.no/fhir/StructureDefinition/hn-task-deadline" />
+      </type>
+    </element>
+    <element id="Task.restriction.extension:reminder">
+      <path value="Task.restriction.extension" />
+      <sliceName value="reminder" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/hn-task-reminder" />
       </type>
     </element>
     <element id="Task.restriction.recipient.extension">
@@ -3524,7 +3686,6 @@
     <element id="Task.restriction.recipient.extension:endpoint">
       <path value="Task.restriction.recipient.extension" />
       <sliceName value="endpoint" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
