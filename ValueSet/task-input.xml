@@ -36,6 +36,10 @@
 				<code value="accessibility-to-output" />
 				<display value="Who can access the output of the task" />
 			</concept>
+			<concept>
+				<code value="supports-representation" />
+				<display value="Does the tool used to perform the task support user representation" />
+			</concept>
 		</include>
 	</compose>
 </ValueSet>
