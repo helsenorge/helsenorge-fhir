@@ -1,181 +1,182 @@
 {
-    "resourceType": "Task",
-    "instantiatesUri": "https://minhelse.helsenorge.no/skjemautfyller?Query=Questionnaire%3Fname%3DHV-IIFJ-1",
-    "status": "requested",
-    "intent": "plan",
-    "priority": "routine",
-    "description": "Vær vennlig å fyll ut vedlagte skjema.",
-    "authoredOn": "2019-10-03T21:28:00.2047462+02:00",
-    "lastModified": "2019-10-03T21:28:00.2083855+02:00",
-    "requester": {
+  "resourceType": "Task",
+  "instantiatesUri": "https://minhelse.helsenorge.no/skjemautfyller?Query=Questionnaire%3Fname%3DHV-IIFJ-1",
+  "status": "requested",
+  "intent": "plan",
+  "priority": "routine",
+  "description": "Vær vennlig å fyll ut vedlagte skjema.",
+  "authoredOn": "2019-10-04T13:06:33.1611692+02:00",
+  "lastModified": "2019-10-04T13:06:33.632612+02:00",
+  "requester": {
+    "type": "Organization",
+    "identifier": {
+      "system": "2.16.578.1.12.4.1.2.101",
+      "value": "948554062"
+    },
+    "display": "Studentsamskipnaden i Oslo og Akershus"
+  },
+  "owner": {
+    "type": "Patient",
+    "identifier": {
+      "system": "2.16.578.1.12.4.1.4.1",
+      "value": "13116900216"
+    },
+    "display": "Line Danser"
+  },
+  "restriction": {
+    "period": {
+      "end": "2019-10-25T13:06:33.6359321+02:00"
+    },
+    "recipient": [
+      {
+        "extension": [
+          {
+            "url": "http://ehelse.no/fhir/StructureDefinition/sdf-endpoint",
+            "valueReference": {
+              "reference": "http://skjemakatalog.ehelse.no/api/v1/Endpoint/<id>",
+              "display": "SiO skjemamottak"
+            }
+          }
+        ],
         "type": "Organization",
         "identifier": {
-            "system": "2.16.578.1.12.4.1.2.101",
-            "value": "948554062"
+          "system": "2.16.578.1.12.4.1.2.101",
+          "value": "948554062"
         },
         "display": "Studentsamskipnaden i Oslo og Akershus"
-    },
-    "owner": {
-        "type": "Patient",
-        "identifier": {
-            "system": "2.16.578.1.12.4.1.4.1",
-            "value": "13116900216"
-        },
-        "display": "Line Danser"
-    },
-    "restriction": {
-        "period": {
-            "end": "2019-10-24T21:28:00.2094677+02:00"
-        },
-        "recipient": [
-            {
-                "extension": [
-                    {
-                        "url": "http://ehelse.no/fhir/StructureDefinition/sdf-endpoint",
-                        "valueReference": {
-                            "reference": "http://skjemakatalog.ehelse.no/api/v1/Endpoint/<id>",
-                            "display": "SiO skjemamottak"
-                        }
-                    }
-                ],
-                "type": "Organization",
-                "identifier": {
-                    "system": "2.16.578.1.12.4.1.2.101",
-                    "value": "948554062"
-                },
-                "display": "Studentsamskipnaden i Oslo og Akershus"
-            }
-        ]
-    },
-    "input": [
-        {
-            "type": {
-                "coding": [
-                    {
-                        "system": "http://helsenorge.no/fhir/task-input",
-                        "code": "reminder",
-                        "display": "The reminder for the task"
-                    }
-                ]
-            }
-        },
-        {
-            "type": {
-                "coding": [
-                    {
-                        "system": "http://helsenorge.no/fhir/task-input",
-                        "code": "deadline",
-                        "display": "The deadline for the task"
-                    }
-                ]
-            },
-            "valueDateTime": "2019-10-17T19:28:00.2106551+00:00"
-        },
-        {
-            "type": {
-                "coding": [
-                    {
-                        "system": "http://helsenorge.no/fhir/task-input",
-                        "code": "contact",
-                        "display": "Contact details for the task"
-                    }
-                ]
-            },
-            "valueContactDetail": {
-                "extension": [
-                    {
-                        "url": "http://helsenorge.no/fhir/StructureDefinition/hn-description",
-                        "valueString": "Ved uklarheter med skjemaet eller annet kontakt SiO."
-                    }
-                ],
-                "name": "SiO",
-                "telecom": [
-                    {
-                        "system": "phone",
-                        "value": "+4722853200"
-                    }
-                ]
-            }
-        },
-        {
-            "type": {
-                "coding": [
-                    {
-                        "system": "http://helsenorge.no/fhir/task-input",
-                        "code": "title",
-                        "display": "Task title"
-                    }
-                ]
-            },
-            "valueString": "[Meldingstittel] Skjema <something> fra SIO"
-        },
-        {
-            "type": {
-                "coding": [
-                    {
-                        "system": "http://helsenorge.no/fhir/task-input",
-                        "code": "name",
-                        "display": "Task name"
-                    }
-                ]
-            },
-            "valueString": "SIO973"
-        },
-        {
-            "type": {
-                "coding": [
-                    {
-                        "system": "http://helsenorge.no/fhir/task-input",
-                        "code": "describe-receiver",
-                        "display": "Description about the receiver(s) and their purpose"
-                    }
-                ]
-            },
-            "valueString": "This parameter describes the receivers of the task output and their purpose."
-        },
-        {
-            "type": {
-                "coding": [
-                    {
-                        "system": "http://helsenorge.no/fhir/task-input",
-                        "code": "accessibility-to-output",
-                        "display": "Who can access the output of the task"
-                    }
-                ]
-            },
-            "valueCoding": {
-                "system": "http://ehelse.no/fhir/ValueSet/CanBePerformedBy",
-                "code": "1",
-                "display": "Default behavior"
-            }
-        },
-        {
-            "type": {
-                "coding": [
-                    {
-                        "system": "http://helsenorge.no/fhir/task-input",
-                        "code": "accessibility-to-output",
-                        "display": "Who can access the output of the task"
-                    }
-                ]
-            },
-            "valueCoding": {
-                "system": "http://ehelse.no/fhir/ValueSet/AccessibilityToResponse",
-                "code": "1",
-                "display": "Default behavior"
-            }
-        },
-        {
-            "type": {
-                "coding": [
-                    {
-                        "system": "http://helsenorge.no/fhir/task-input",
-                        "code": "supports-representation",
-                        "display": "Does the tool used to perform the task support user representation"
-                    }
-                ]
-            },
-            "valueBoolean": true
-        }
+      }
     ]
+  },
+  "input": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://helsenorge.no/fhir/task-input",
+            "code": "reminder",
+            "display": "The reminder for the task"
+          }
+        ]
+      },
+      "valueDate": "2019-10-16"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://helsenorge.no/fhir/task-input",
+            "code": "deadline",
+            "display": "The deadline for the task"
+          }
+        ]
+      },
+      "valueDate": "2019-10-18"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://helsenorge.no/fhir/task-input",
+            "code": "contact",
+            "display": "Contact details for the task"
+          }
+        ]
+      },
+      "valueContactDetail": {
+        "extension": [
+          {
+            "url": "http://helsenorge.no/fhir/StructureDefinition/hn-description",
+            "valueString": "Ved uklarheter med skjemaet eller annet kontakt SiO."
+          }
+        ],
+        "name": "SiO",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+4722853200"
+          }
+        ]
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://helsenorge.no/fhir/task-input",
+            "code": "title",
+            "display": "Task title"
+          }
+        ]
+      },
+      "valueString": "[Meldingstittel] Skjema <something> fra SIO"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://helsenorge.no/fhir/task-input",
+            "code": "name",
+            "display": "Task name"
+          }
+        ]
+      },
+      "valueString": "SIO973"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://helsenorge.no/fhir/task-input",
+            "code": "describe-receiver",
+            "display": "Description about the receiver(s) and their purpose"
+          }
+        ]
+      },
+      "valueString": "This parameter describes the receivers of the task output and their purpose."
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://helsenorge.no/fhir/task-input",
+            "code": "accessibility-to-output",
+            "display": "Who can access the output of the task"
+          }
+        ]
+      },
+      "valueCoding": {
+        "system": "http://ehelse.no/fhir/ValueSet/CanBePerformedBy",
+        "code": "1",
+        "display": "Default behavior"
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://helsenorge.no/fhir/task-input",
+            "code": "accessibility-to-output",
+            "display": "Who can access the output of the task"
+          }
+        ]
+      },
+      "valueCoding": {
+        "system": "http://ehelse.no/fhir/ValueSet/AccessibilityToResponse",
+        "code": "1",
+        "display": "Default behavior"
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://helsenorge.no/fhir/task-input",
+            "code": "supports-representation",
+            "display": "Does the tool used to perform the task support user representation"
+          }
+        ]
+      },
+      "valueBoolean": true
+    }
+  ]
 }

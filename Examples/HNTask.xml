@@ -1,151 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Task xmlns="http://hl7.org/fhir">
-	<instantiatesUri value="https://minhelse.helsenorge.no/skjemautfyller?Query=Questionnaire%3Fname%3DHV-IIFJ-1" />
-	<status value="requested" />
-	<intent value="plan" />
-	<priority value="routine" />
-	<description value="Vær vennlig å fyll ut vedlagte skjema." />
-	<authoredOn value="2019-10-03T21:28:00.2047462+02:00" />
-	<lastModified value="2019-10-03T21:28:00.2083855+02:00" />
-	<requester>
-		<type value="Organization" />
-		<identifier>
-			<system value="2.16.578.1.12.4.1.2.101" />
-			<value value="948554062" />
-		</identifier>
-		<display value="Studentsamskipnaden i Oslo og Akershus" />
-	</requester>
-	<owner>
-		<type value="Patient" />
-		<identifier>
-			<system value="2.16.578.1.12.4.1.4.1" />
-			<value value="13116900216" />
-		</identifier>
-		<display value="Line Danser" />
-	</owner>
-	<restriction>
-		<period>
-			<end value="2019-10-24T21:28:00.2094677+02:00" />
-		</period>
-		<recipient>
-			<extension url="http://ehelse.no/fhir/StructureDefinition/sdf-endpoint">
-				<valueReference>
-					<reference value="http://skjemakatalog.ehelse.no/api/v1/Endpoint/&lt;id&gt;" />
-					<display value="SiO skjemamottak" />
-				</valueReference>
-			</extension>
-			<type value="Organization" />
-			<identifier>
-				<system value="2.16.578.1.12.4.1.2.101" />
-				<value value="948554062" />
-			</identifier>
-			<display value="Studentsamskipnaden i Oslo og Akershus" />
-		</recipient>
-	</restriction>
-	<input>
-		<type>
-			<coding>
-				<system value="http://helsenorge.no/fhir/task-input" />
-				<code value="reminder" />
-				<display value="The reminder for the task" />
-			</coding>
-		</type>
-	</input>
-	<input>
-		<type>
-			<coding>
-				<system value="http://helsenorge.no/fhir/task-input" />
-				<code value="deadline" />
-				<display value="The deadline for the task" />
-			</coding>
-		</type>
-		<valueDateTime value="2019-10-17T19:28:00.2106551+00:00" />
-	</input>
-	<input>
-		<type>
-			<coding>
-				<system value="http://helsenorge.no/fhir/task-input" />
-				<code value="contact" />
-				<display value="Contact details for the task" />
-			</coding>
-		</type>
-		<valueContactDetail>
-			<extension url="http://helsenorge.no/fhir/StructureDefinition/hn-description">
-				<valueString value="Ved uklarheter med skjemaet eller annet kontakt SiO." />
-			</extension>
-			<name value="SiO" />
-			<telecom>
-				<system value="phone" />
-				<value value="+4722853200" />
-			</telecom>
-		</valueContactDetail>
-	</input>
-	<input>
-		<type>
-			<coding>
-				<system value="http://helsenorge.no/fhir/task-input" />
-				<code value="title" />
-				<display value="Task title" />
-			</coding>
-		</type>
-		<valueString value="[Meldingstittel] Skjema &lt;something&gt; fra SIO" />
-	</input>
-	<input>
-		<type>
-			<coding>
-				<system value="http://helsenorge.no/fhir/task-input" />
-				<code value="name" />
-				<display value="Task name" />
-			</coding>
-		</type>
-		<valueString value="SIO973" />
-	</input>
-	<input>
-		<type>
-			<coding>
-				<system value="http://helsenorge.no/fhir/task-input" />
-				<code value="describe-receiver" />
-				<display value="Description about the receiver(s) and their purpose" />
-			</coding>
-		</type>
-		<valueString value="This parameter describes the receivers of the task output and their purpose." />
-	</input>
-	<input>
-		<type>
-			<coding>
-				<system value="http://helsenorge.no/fhir/task-input" />
-				<code value="accessibility-to-output" />
-				<display value="Who can access the output of the task" />
-			</coding>
-		</type>
-		<valueCoding>
-			<system value="http://ehelse.no/fhir/ValueSet/CanBePerformedBy" />
-			<code value="1" />
-			<display value="Default behavior" />
-		</valueCoding>
-	</input>
-	<input>
-		<type>
-			<coding>
-				<system value="http://helsenorge.no/fhir/task-input" />
-				<code value="accessibility-to-output" />
-				<display value="Who can access the output of the task" />
-			</coding>
-		</type>
-		<valueCoding>
-			<system value="http://ehelse.no/fhir/ValueSet/AccessibilityToResponse" />
-			<code value="1" />
-			<display value="Default behavior" />
-		</valueCoding>
-	</input>
-	<input>
-		<type>
-			<coding>
-				<system value="http://helsenorge.no/fhir/task-input" />
-				<code value="supports-representation" />
-				<display value="Does the tool used to perform the task support user representation" />
-			</coding>
-		</type>
-		<valueBoolean value="true" />
-	</input>
+  <instantiatesUri value="https://minhelse.helsenorge.no/skjemautfyller?Query=Questionnaire%3Fname%3DHV-IIFJ-1" />
+  <status value="requested" />
+  <intent value="plan" />
+  <priority value="routine" />
+  <description value="Vær vennlig å fyll ut vedlagte skjema." />
+  <authoredOn value="2019-10-04T13:06:33.1611692+02:00" />
+  <lastModified value="2019-10-04T13:06:33.632612+02:00" />
+  <requester>
+    <type value="Organization" />
+    <identifier>
+      <system value="2.16.578.1.12.4.1.2.101" />
+      <value value="948554062" />
+    </identifier>
+    <display value="Studentsamskipnaden i Oslo og Akershus" />
+  </requester>
+  <owner>
+    <type value="Patient" />
+    <identifier>
+      <system value="2.16.578.1.12.4.1.4.1" />
+      <value value="13116900216" />
+    </identifier>
+    <display value="Line Danser" />
+  </owner>
+  <restriction>
+    <period>
+      <end value="2019-10-25T13:06:33.6359321+02:00" />
+    </period>
+    <recipient>
+      <extension url="http://ehelse.no/fhir/StructureDefinition/sdf-endpoint">
+        <valueReference>
+          <reference value="http://skjemakatalog.ehelse.no/api/v1/Endpoint/&lt;id&gt;" />
+          <display value="SiO skjemamottak" />
+        </valueReference>
+      </extension>
+      <type value="Organization" />
+      <identifier>
+        <system value="2.16.578.1.12.4.1.2.101" />
+        <value value="948554062" />
+      </identifier>
+      <display value="Studentsamskipnaden i Oslo og Akershus" />
+    </recipient>
+  </restriction>
+  <input>
+    <type>
+      <coding>
+        <system value="http://helsenorge.no/fhir/task-input" />
+        <code value="reminder" />
+        <display value="The reminder for the task" />
+      </coding>
+    </type>
+    <valueDate value="2019-10-16" />
+  </input>
+  <input>
+    <type>
+      <coding>
+        <system value="http://helsenorge.no/fhir/task-input" />
+        <code value="deadline" />
+        <display value="The deadline for the task" />
+      </coding>
+    </type>
+    <valueDate value="2019-10-18" />
+  </input>
+  <input>
+    <type>
+      <coding>
+        <system value="http://helsenorge.no/fhir/task-input" />
+        <code value="contact" />
+        <display value="Contact details for the task" />
+      </coding>
+    </type>
+    <valueContactDetail>
+      <extension url="http://helsenorge.no/fhir/StructureDefinition/hn-description">
+        <valueString value="Ved uklarheter med skjemaet eller annet kontakt SiO." />
+      </extension>
+      <name value="SiO" />
+      <telecom>
+        <system value="phone" />
+        <value value="+4722853200" />
+      </telecom>
+    </valueContactDetail>
+  </input>
+  <input>
+    <type>
+      <coding>
+        <system value="http://helsenorge.no/fhir/task-input" />
+        <code value="title" />
+        <display value="Task title" />
+      </coding>
+    </type>
+    <valueString value="[Meldingstittel] Skjema &lt;something&gt; fra SIO" />
+  </input>
+  <input>
+    <type>
+      <coding>
+        <system value="http://helsenorge.no/fhir/task-input" />
+        <code value="name" />
+        <display value="Task name" />
+      </coding>
+    </type>
+    <valueString value="SIO973" />
+  </input>
+  <input>
+    <type>
+      <coding>
+        <system value="http://helsenorge.no/fhir/task-input" />
+        <code value="describe-receiver" />
+        <display value="Description about the receiver(s) and their purpose" />
+      </coding>
+    </type>
+    <valueString value="This parameter describes the receivers of the task output and their purpose." />
+  </input>
+  <input>
+    <type>
+      <coding>
+        <system value="http://helsenorge.no/fhir/task-input" />
+        <code value="accessibility-to-output" />
+        <display value="Who can access the output of the task" />
+      </coding>
+    </type>
+    <valueCoding>
+      <system value="http://ehelse.no/fhir/ValueSet/CanBePerformedBy" />
+      <code value="1" />
+      <display value="Default behavior" />
+    </valueCoding>
+  </input>
+  <input>
+    <type>
+      <coding>
+        <system value="http://helsenorge.no/fhir/task-input" />
+        <code value="accessibility-to-output" />
+        <display value="Who can access the output of the task" />
+      </coding>
+    </type>
+    <valueCoding>
+      <system value="http://ehelse.no/fhir/ValueSet/AccessibilityToResponse" />
+      <code value="1" />
+      <display value="Default behavior" />
+    </valueCoding>
+  </input>
+  <input>
+    <type>
+      <coding>
+        <system value="http://helsenorge.no/fhir/task-input" />
+        <code value="supports-representation" />
+        <display value="Does the tool used to perform the task support user representation" />
+      </coding>
+    </type>
+    <valueBoolean value="true" />
+  </input>
 </Task>
