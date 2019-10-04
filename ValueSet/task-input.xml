@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<url value="http://helsenorge.no/fhir/ValueSet/task-input" />
-	<compose>
-		<include>
-			<system value="http://helsenorge.no/fhir/task-input" />
-			<concept>
-				<code value="reminder" />
-				<display value="The reminder for the task" />
-			</concept>
-			<concept>
-				<code value="deadline" />
-				<display value="The deadline for the task" />
-			</concept>
-			<concept>
-				<code value="contact" />
-				<display value="Contact details for the task" />
-			</concept>
-			<concept>
-				<code value="title" />
-				<display value="Task title" />
-			</concept>
-			<concept>
-				<code value="name" />
-				<display value="Task name" />
-			</concept>
-			<concept>
-				<code value="describe-receiver" />
-				<display value="Description about the receiver(s) and their purpose" />
-			</concept>
-			<concept>
-				<code value="performed-by" />
-				<display value="Who can perform the task" />
-			</concept>
-			<concept>
-				<code value="accessibility-to-output" />
-				<display value="Who can access the output of the task" />
-			</concept>
-			<concept>
-				<code value="supports-representation" />
-				<display value="Does the tool used to perform the task support user representation" />
-			</concept>
-		</include>
-	</compose>
+  <url value="http://helsenorge.no/fhir/ValueSet/task-input" />
+  <compose>
+    <include>
+      <system value="http://helsenorge.no/fhir/task-input" />
+      <concept>
+        <code value="reminder" />
+        <display value="The reminder for the task" />
+      </concept>
+      <concept>
+        <code value="deadline" />
+        <display value="The deadline for the task" />
+      </concept>
+      <concept>
+        <code value="contact" />
+        <display value="Contact details for the task" />
+      </concept>
+      <concept>
+        <code value="title" />
+        <display value="Task title" />
+      </concept>
+      <concept>
+        <code value="name" />
+        <display value="Task name" />
+      </concept>
+      <concept>
+        <code value="describe-receiver" />
+        <display value="Description about the receiver(s) and their purpose" />
+      </concept>
+      <concept>
+        <code value="performed-by" />
+        <display value="Who can perform the task" />
+      </concept>
+      <concept>
+        <code value="access-to-output" />
+        <display value="Who can access the output of the task" />
+      </concept>
+      <concept>
+        <code value="supports-representation" />
+        <display value="Does the tool used to perform the task support user representation" />
+      </concept>
+    </include>
+  </compose>
 </ValueSet>

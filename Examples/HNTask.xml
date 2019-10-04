@@ -5,8 +5,8 @@
   <intent value="plan" />
   <priority value="routine" />
   <description value="Vær vennlig å fyll ut vedlagte skjema." />
-  <authoredOn value="2019-10-04T13:06:33.1611692+02:00" />
-  <lastModified value="2019-10-04T13:06:33.632612+02:00" />
+  <authoredOn value="2019-10-04T14:03:42.8007888+02:00" />
+  <lastModified value="2019-10-04T14:03:42.8049218+02:00" />
   <requester>
     <type value="Organization" />
     <identifier>
@@ -25,7 +25,7 @@
   </owner>
   <restriction>
     <period>
-      <end value="2019-10-25T13:06:33.6359321+02:00" />
+      <end value="2019-10-25T14:03:42.8091062+02:00" />
     </period>
     <recipient>
       <extension url="http://ehelse.no/fhir/StructureDefinition/sdf-endpoint">
@@ -115,8 +115,8 @@
     <type>
       <coding>
         <system value="http://helsenorge.no/fhir/task-input" />
-        <code value="accessibility-to-output" />
-        <display value="Who can access the output of the task" />
+        <code value="performed-by" />
+        <display value="Who can perform the task" />
       </coding>
     </type>
     <valueCoding>
@@ -129,7 +129,7 @@
     <type>
       <coding>
         <system value="http://helsenorge.no/fhir/task-input" />
-        <code value="accessibility-to-output" />
+        <code value="access-to-output" />
         <display value="Who can access the output of the task" />
       </coding>
     </type>
