@@ -5,8 +5,8 @@
   <intent value="plan" />
   <priority value="routine" />
   <description value="Vær vennlig å fyll ut vedlagte skjema." />
-  <authoredOn value="2019-10-04T14:03:42.8007888+02:00" />
-  <lastModified value="2019-10-04T14:03:42.8049218+02:00" />
+  <authoredOn value="2019-10-15T15:12:49.4556776+02:00" />
+  <lastModified value="2019-10-15T15:12:49.4640383+02:00" />
   <requester>
     <type value="Organization" />
     <identifier>
@@ -25,7 +25,7 @@
   </owner>
   <restriction>
     <period>
-      <end value="2019-10-25T14:03:42.8091062+02:00" />
+      <end value="2019-11-05T15:12:49.4671577+02:00" />
     </period>
     <recipient>
       <extension url="http://ehelse.no/fhir/StructureDefinition/sdf-endpoint">
@@ -50,7 +50,7 @@
         <display value="The reminder for the task" />
       </coding>
     </type>
-    <valueDate value="2019-10-16" />
+    <valueDate value="2019-10-27" />
   </input>
   <input>
     <type>
@@ -60,7 +60,7 @@
         <display value="The deadline for the task" />
       </coding>
     </type>
-    <valueDate value="2019-10-18" />
+    <valueDate value="2019-10-29" />
   </input>
   <input>
     <type>
@@ -148,5 +148,21 @@
       </coding>
     </type>
     <valueBoolean value="true" />
+  </input>
+  <input>
+    <type>
+      <coding>
+        <system value="http://helsenorge.no/fhir/task-input" />
+        <code value="use-context" />
+        <display value="Explains the use context of the Task being pointed at, this is used internally by Helsenorge to map to a consent area" />
+      </coding>
+    </type>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.578.1.12.4.1.1.8655" />
+        <code value="S0305" />
+        <display value="Infeksjonsmedisin" />
+      </coding>
+    </valueCodeableConcept>
   </input>
 </Task>
