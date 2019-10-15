@@ -40,6 +40,10 @@
         <code value="supports-representation" />
         <display value="Does the tool used to perform the task support user representation" />
       </concept>
+      <concept>
+        <code value="use-context" />
+        <display value="Explains the use context of the Task. This is used internally by Helsenorge to map the resource to a consent area" />
+      </concept>
     </include>
   </compose>
 </ValueSet>
