@@ -1,12 +1,18 @@
 {
   "resourceType": "Task",
+  "meta": {
+    "lastUpdated": "2019-11-15T07:17:27.1424825+00:00",
+    "profile": [
+      "http://helsenorge.no/fhir/StructureDefinition/hn-task"
+    ]
+  },
   "instantiatesUri": "https://minhelse.helsenorge.no/skjemautfyller?Query=Questionnaire%3Fname%3DHV-IIFJ-1",
   "status": "requested",
   "intent": "plan",
   "priority": "routine",
   "description": "Vær vennlig å fyll ut vedlagte skjema.",
-  "authoredOn": "2019-10-04T14:03:42.8007888+02:00",
-  "lastModified": "2019-10-04T14:03:42.8049218+02:00",
+  "authoredOn": "2019-11-15T08:17:27.4163004+01:00",
+  "lastModified": "2019-11-15T08:17:27.497145+01:00",
   "requester": {
     "type": "Organization",
     "identifier": {
@@ -25,7 +31,7 @@
   },
   "restriction": {
     "period": {
-      "end": "2019-10-25T14:03:42.8091062+02:00"
+      "end": "2019-12-06T08:17:27.5012772+01:00"
     },
     "recipient": [
       {
@@ -58,7 +64,7 @@
           }
         ]
       },
-      "valueDate": "2019-10-16"
+      "valueDate": "2019-11-27"
     },
     {
       "type": {
@@ -70,7 +76,7 @@
           }
         ]
       },
-      "valueDate": "2019-10-18"
+      "valueDate": "2019-11-29"
     },
     {
       "type": {
@@ -177,6 +183,26 @@
         ]
       },
       "valueBoolean": true
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://helsenorge.no/fhir/task-input",
+            "code": "use-context",
+            "display": "Explains the use context of the Task being pointed at, this is used internally by Helsenorge to map to a consent area"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.578.1.12.4.1.1.8655",
+            "code": "S0305",
+            "display": "Infeksjonsmedisin"
+          }
+        ]
+      }
     }
   ]
 }
