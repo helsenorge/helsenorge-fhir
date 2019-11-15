@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="use-context" />
+  <url value="http://ehelse.no/fhir/ValueSet/use-context" />
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.7614" />
+      <concept>
+        <code value="1" />
+        <display value="Innsyn journal" />
+      </concept>
+      <concept>
+        <code value="2" />
+        <display value="Kopi/utskrift av journal" />
+      </concept>
+      <concept>
+        <code value="3" />
+        <display value="Kopi av innsynslogg" />
+      </concept>
+      <concept>
+        <code value="4" />
+        <display value="Forklaring til innsynslogg" />
+      </concept>
+      <concept>
+        <code value="5" />
+        <display value="Retting av journal" />
+      </concept>
+      <concept>
+        <code value="6" />
+        <display value="Sletting av journal" />
+      </concept>
+      <concept>
+        <code value="7" />
+        <display value="Motsette seg overføring og tilgjengeliggjøring av journal" />
+      </concept>
+      <concept>
+        <code value="8" />
+        <display value="Rett til å motsette seg behandling av helseopplysninger" />
+      </concept>
+    </include>
+    <include>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.7615" />
+      <concept>
+        <code value="1" />
+        <display value="Fylkeshelseundersøkelser" />
+      </concept>
+      <concept>
+        <code value="2" />
+        <display value="Dødsårsaksregisteret (DÅR)" />
+      </concept>
+      <concept>
+        <code value="3" />
+        <display value="Norsk pasientregister" />
+      </concept>
+      <concept>
+        <code value="4" />
+        <display value="Meldesystem for smittsomme sykdommer (MSIS)" />
+      </concept>
+      <concept>
+        <code value="5" />
+        <display value="Medisinsk fødselsregister (MFR)" />
+      </concept>
+      <concept>
+        <code value="6" />
+        <display value="Sykdomspulsen" />
+      </concept>
+      <concept>
+        <code value="7" />
+        <display value="Nasjonalt vaksinasjonsregister (SYSVAK)" />
+      </concept>
+      <concept>
+        <code value="8" />
+        <display value="Hjerte- og karregisteret (HKR)" />
+      </concept>
+      <concept>
+        <code value="9" />
+        <display value="Kreftregistrene" />
+      </concept>
+      <concept>
+        <code value="10" />
+        <display value="Barne- og ungdomsdiabetesregisteret" />
+      </concept>
+      <concept>
+        <code value="11" />
+        <display value="Cerebral pareseregisteret" />
+      </concept>
+      <concept>
+        <code value="12" />
+        <display value="Pacemaker- og ICD-registeret" />
+      </concept>
+      <concept>
+        <code value="13" />
+        <display value="Norsk nyfødtmedisinsk kvalitetsregister" />
+      </concept>
+      <concept>
+        <code value="14" />
+        <display value="Kommunalt pasient- og brukerregister (KPR)" />
+      </concept>
+      <concept>
+        <code value="15" />
+        <display value="Register over svangerskapsavbrudd" />
+      </concept>
+      <concept>
+        <code value="16" />
+        <display value="Reseptbasert legemiddelregister" />
+      </concept>
+      <concept>
+        <code value="17" />
+        <display value="Norsk overvåkingssystem for antibiotikabruk og helsetjenesteassosierte infeksjoner (NOIS)" />
+      </concept>
+      <concept>
+        <code value="18" />
+        <display value="Norsk overvåkingssystem for antibiotikaresistens hos mikrober (NORM)" />
+      </concept>
+      <concept>
+        <code value="19" />
+        <display value="System for overvåking av virusresistens (RAVN)" />
+      </concept>
+      <concept>
+        <code value="20" />
+        <display value="Individbasert pleie- og omsorgsstatistikk (IPLOS)" />
+      </concept>
+      <concept>
+        <code value="21" />
+        <display value="Genetisk masseundersøkelse av nyfødte" />
+      </concept>
+      <concept>
+        <code value="22" />
+        <display value="Reseptformidleren" />
+      </concept>
+      <concept>
+        <code value="23" />
+        <display value="Forsvarets helseregister" />
+      </concept>
+      <concept>
+        <code value="24" />
+        <display value="Helsearkivregisteret" />
+      </concept>
+      <concept>
+        <code value="25" />
+        <display value="Kjernejournal" />
+      </concept>
+      <concept>
+        <code value="26" />
+        <display value="Elektronisk pasientjournal" />
+      </concept>
+      <concept>
+        <code value="27" />
+        <display value="Pasientadministrativt system" />
+      </concept>
+      <concept>
+        <code value="28" />
+        <display value="Nyfødtscreeningsregisteret" />
+      </concept>
+    </include>
+    <include>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.8655" />
+      <concept>
+        <code value="R" />
+        <display value="Helsehjelp knyttet til rusmiddelavhengighet og annen avhengighet" />
+      </concept>
+      <concept>
+        <code value="R01" />
+        <display value="Spilleavhengighet og annen avhengighet" />
+      </concept>
+      <concept>
+        <code value="R02" />
+        <display value="Rusmiddelavhengighet med alvorlig psykiatrisk sykdom (dobbeldiagnose)" />
+      </concept>
+      <concept>
+        <code value="R03" />
+        <display value="Rusmiddelavhengighet med langvarig funksjonssvikt" />
+      </concept>
+      <concept>
+        <code value="R04" />
+        <display value="Førstegangspsykose knyttet til rusmiddelavhengighet" />
+      </concept>
+      <concept>
+        <code value="R05" />
+        <display value="Utredning av rusmiddelavhengighet eller annen avhengighet" />
+      </concept>
+      <concept>
+        <code value="R06" />
+        <display value="Avrusning/ avgiftning/ stabilisering" />
+      </concept>
+      <concept>
+        <code value="R07" />
+        <display value="Familieterapi, parterapi og pårørendeterapi" />
+      </concept>
+      <concept>
+        <code value="R08" />
+        <display value="Legemiddelassistert rehabilitering (LAR)" />
+      </concept>
+      <concept>
+        <code value="R09" />
+        <display value="Terapeutisk samfunn, kollektiv osv." />
+      </concept>
+      <concept>
+        <code value="R10" />
+        <display value="Innsatte under paragraf 12-soning" />
+      </concept>
+      <concept>
+        <code value="R11" />
+        <display value="Tverrfaglig spesialisert behandling av rusmiddelmisbruk" />
+      </concept>
+      <concept>
+        <code value="P" />
+        <display value="Psykisk helsevern" />
+      </concept>
+      <concept>
+        <code value="PB" />
+        <display value="Psykisk helsevern for barn og unge (BUP)" />
+      </concept>
+      <concept>
+        <code value="PB01" />
+        <display value="Familieterapi" />
+      </concept>
+      <concept>
+        <code value="PB02" />
+        <display value="Spiseforstyrrelser hos barn" />
+      </concept>
+      <concept>
+        <code value="PV" />
+        <display value="Psykisk helsevern for voksne" />
+      </concept>
+      <concept>
+        <code value="PV01" />
+        <display value="Spiseforstyrrelser hos voksne" />
+      </concept>
+      <concept>
+        <code value="PV02" />
+        <display value="Psykiatrisk helsehjelp til døve" />
+      </concept>
+      <concept>
+        <code value="PV03" />
+        <display value="Unge schizofrene" />
+      </concept>
+      <concept>
+        <code value="PV04" />
+        <display value="Alderspsykiatrisk behandling" />
+      </concept>
+      <concept>
+        <code value="PV05" />
+        <display value="Psykiatrisk helsehjelp til asylsøkere og flyktninger" />
+      </concept>
+      <concept>
+        <code value="PV06" />
+        <display value="Tidlig intervensjon" />
+      </concept>
+      <concept>
+        <code value="PV07" />
+        <display value="Pasienter med langvarig funksjonssvikt" />
+      </concept>
+      <concept>
+        <code value="PV08" />
+        <display value="Førstegangspsykose" />
+      </concept>
+      <concept>
+        <code value="PV09" />
+        <display value="Habilitering/Rehabilitering (psykisk helsevern for voksne)" />
+      </concept>
+      <concept>
+        <code value="PV10" />
+        <display value="Familieterapi/behandling" />
+      </concept>
+      <concept>
+        <code value="PV11" />
+        <display value="Sikkerhetspsykiatri" />
+      </concept>
+      <concept>
+        <code value="H" />
+        <display value="Helsehjelp knyttet til habilitering og rehabilitering" />
+      </concept>
+      <concept>
+        <code value="H07" />
+        <display value="Barnehabilitering" />
+      </concept>
+      <concept>
+        <code value="H08" />
+        <display value="Voksenhabilitering" />
+      </concept>
+      <concept>
+        <code value="H09" />
+        <display value="Rehabilitering" />
+      </concept>
+      <concept>
+        <code value="S" />
+        <display value="Helsehjelp knyttet til somatisk sykdom" />
+      </concept>
+      <concept>
+        <code value="S01" />
+        <display value="Allmennmedisin" />
+      </concept>
+      <concept>
+        <code value="S02" />
+        <display value="Kirurgi" />
+      </concept>
+      <concept>
+        <code value="S201" />
+        <display value="Generell kirurgi" />
+      </concept>
+      <concept>
+        <code value="S202" />
+        <display value="Barnekirurgi" />
+      </concept>
+      <concept>
+        <code value="S203" />
+        <display value="Bryst og endokrin kirurgi" />
+      </concept>
+      <concept>
+        <code value="S204" />
+        <display value="Gastroenterologisk kirurgi" />
+      </concept>
+      <concept>
+        <code value="S205" />
+        <display value="Karkirurgi" />
+      </concept>
+      <concept>
+        <code value="S206" />
+        <display value="Kjeve- og ansiktskirurgi" />
+      </concept>
+      <concept>
+        <code value="S207" />
+        <display value="Nevrokirurgi" />
+      </concept>
+      <concept>
+        <code value="S208" />
+        <display value="Ortopedisk kirurgi" />
+      </concept>
+      <concept>
+        <code value="S209" />
+        <display value="Plastikkirurgi" />
+      </concept>
+      <concept>
+        <code value="S210" />
+        <display value="Thoraxkirurgi" />
+      </concept>
+      <concept>
+        <code value="S211" />
+        <display value="Urologi" />
+      </concept>
+      <concept>
+        <code value="S03" />
+        <display value="Indremedisin" />
+      </concept>
+      <concept>
+        <code value="S0301" />
+        <display value="Endokrinologi" />
+      </concept>
+      <concept>
+        <code value="S0302" />
+        <display value="Fordøyelsessykdommer" />
+      </concept>
+      <concept>
+        <code value="S0303" />
+        <display value="Geriatri" />
+      </concept>
+      <concept>
+        <code value="S0304" />
+        <display value="Blodsykdommer" />
+      </concept>
+      <concept>
+        <code value="S0305" />
+        <display value="Infeksjonsmedisin" />
+      </concept>
+      <concept>
+        <code value="S0306" />
+        <display value="Hjertesykdommer" />
+      </concept>
+      <concept>
+        <code value="S030601" />
+        <display value="Hjerterytmeforstyrrelser" />
+      </concept>
+      <concept>
+        <code value="S030602" />
+        <display value="Ekkokardiografi og bildediagnostikk" />
+      </concept>
+      <concept>
+        <code value="S030603" />
+        <display value="Klinisk kardiologi" />
+      </concept>
+      <concept>
+        <code value="S030604" />
+        <display value="Forebyggende kardiologi" />
+      </concept>
+      <concept>
+        <code value="S030605" />
+        <display value="Invasiv kardiologi" />
+      </concept>
+      <concept>
+        <code value="S0307" />
+        <display value="Lungesykdommer" />
+      </concept>
+      <concept>
+        <code value="S0308" />
+        <display value="Nyresykdommer" />
+      </concept>
+      <concept>
+        <code value="S0309" />
+        <display value="Dialyse" />
+      </concept>
+      <concept>
+        <code value="S04" />
+        <display value="Fødselshjelp og kvinnesykdommer" />
+      </concept>
+      <concept>
+        <code value="S0401" />
+        <display value="Generell gynekologi" />
+      </concept>
+      <concept>
+        <code value="S0402" />
+        <display value="Gynekologisk onkologi" />
+      </concept>
+      <concept>
+        <code value="S0403" />
+        <display value="Obstetrikk" />
+      </concept>
+      <concept>
+        <code value="S0404" />
+        <display value="Assistert befruktning" />
+      </concept>
+      <concept>
+        <code value="S0405" />
+        <display value="Fostermedisin" />
+      </concept>
+      <concept>
+        <code value="S05" />
+        <display value="Hud- og veneriske sykdommer" />
+      </concept>
+      <concept>
+        <code value="S0501" />
+        <display value="Hudsykdommer" />
+      </concept>
+      <concept>
+        <code value="S0502" />
+        <display value="Veneriske sykdommer" />
+      </concept>
+      <concept>
+        <code value="S06" />
+        <display value="Barnesykdommer" />
+      </concept>
+      <concept>
+        <code value="S0601" />
+        <display value="Nyfødtmedisin" />
+      </concept>
+      <concept>
+        <code value="S0602" />
+        <display value="Intensivbehandling av barn" />
+      </concept>
+      <concept>
+        <code value="S07" />
+        <display value="Nevrologi" />
+      </concept>
+      <concept>
+        <code value="S0701" />
+        <display value="Generell nevrologi" />
+      </concept>
+      <concept>
+        <code value="S0702" />
+        <display value="Cerebrovaskulære sykdommer" />
+      </concept>
+      <concept>
+        <code value="S0703" />
+        <display value="Epilepsi" />
+      </concept>
+      <concept>
+        <code value="S0704" />
+        <display value="Nevrofysiologi" />
+      </concept>
+      <concept>
+        <code value="S08" />
+        <display value="Anestesiologi/smertebehandling" />
+      </concept>
+      <concept>
+        <code value="S09" />
+        <display value="Øre-nese-halssykdommer" />
+      </concept>
+      <concept>
+        <code value="S0901" />
+        <display value="Audiologi" />
+      </concept>
+      <concept>
+        <code value="S0902" />
+        <display value="Laryngologi/Foniatri" />
+      </concept>
+      <concept>
+        <code value="S0903" />
+        <display value="Balansemedisin" />
+      </concept>
+      <concept>
+        <code value="S0904" />
+        <display value="Søvnrelaterte sykdommer" />
+      </concept>
+      <concept>
+        <code value="S0905" />
+        <display value="Nese- og bihulesykdommer" />
+      </concept>
+      <concept>
+        <code value="S0906" />
+        <display value="Otologi" />
+      </concept>
+      <concept>
+        <code value="S0907" />
+        <display value="Hode- og halskirurgi" />
+      </concept>
+      <concept>
+        <code value="S0908" />
+        <display value="Allergologi" />
+      </concept>
+      <concept>
+        <code value="S0909" />
+        <display value="Pediatriske øre-nese-halssykdommer" />
+      </concept>
+      <concept>
+        <code value="S10" />
+        <display value="Øyesykdommer" />
+      </concept>
+      <concept>
+        <code value="S11" />
+        <display value="Onkologi" />
+      </concept>
+      <concept>
+        <code value="S1101" />
+        <display value="Sarkomer" />
+      </concept>
+      <concept>
+        <code value="S12" />
+        <display value="Revmatologi" />
+      </concept>
+      <concept>
+        <code value="S13" />
+        <display value="Tverrfaglig ryggbehandling" />
+      </concept>
+      <concept>
+        <code value="S14" />
+        <display value="Palliativ medisin" />
+      </concept>
+      <concept>
+        <code value="S15" />
+        <display value="Medisinsk genetikk" />
+      </concept>
+      <concept>
+        <code value="S16" />
+        <display value="Fysikalsk medisin og rehabilitering" />
+      </concept>
+      <concept>
+        <code value="A" />
+        <display value="Andre helsehjelpsområder" />
+      </concept>
+      <concept>
+        <code value="A01" />
+        <display value="Sosionomtjenester" />
+      </concept>
+      <concept>
+        <code value="A02" />
+        <display value="Ergoterapi" />
+      </concept>
+      <concept>
+        <code value="A03" />
+        <display value="Fysioterapi" />
+      </concept>
+      <concept>
+        <code value="A04" />
+        <display value="Kiropraktikk" />
+      </concept>
+      <concept>
+        <code value="A05" />
+        <display value="Ernæringsfysiologi" />
+      </concept>
+      <concept>
+        <code value="A06" />
+        <display value="Tannhelse" />
+      </concept>
+      <concept>
+        <code value="A07" />
+        <display value="Audiografi" />
+      </concept>
+      <concept>
+        <code value="A08" />
+        <display value="Spesialpedagogikk" />
+      </concept>
+      <concept>
+        <code value="A09" />
+        <display value="Logopedi" />
+      </concept>
+      <concept>
+        <code value="A10" />
+        <display value="Farmasi" />
+      </concept>
+      <concept>
+        <code value="A11" />
+        <display value="Yrkes- og arbeidsmedisin" />
+      </concept>
+      <concept>
+        <code value="A12" />
+        <display value="Psykologtjeneste" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

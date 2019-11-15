@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="accessibility-to-response" />
+  <url value="http://ehelse.no/fhir/ValueSet/AccessibilityToResponse" />
+  <compose>
+    <include>
+      <system value="http://ehelse.no/fhir/ValueSet/AccessibilityToResponse" />
+      <concept>
+        <code value="1" />
+        <display value="Default behavior" />
+      </concept>
+      <concept>
+        <code value="2" />
+        <display value="Owner and recipient has access to response" />
+      </concept>
+      <concept>
+        <code value="3" />
+        <display value="Only recipient has access to response" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
