@@ -172,7 +172,7 @@
           </extension>
         </code>
       </type>
-      <fixedString value="http://helsenorge.no/fhir/StructureDefinition/hn-description" />
+      <fixedUri value="http://helsenorge.no/fhir/StructureDefinition/hn-description" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -215,7 +215,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://helsenorge.no/fhir/StructureDefinition/hn-description" />
+      <fixedUri value="http://helsenorge.no/fhir/StructureDefinition/hn-description" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
