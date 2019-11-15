@@ -16,7 +16,7 @@
   "requester": {
     "type": "Organization",
     "identifier": {
-      "system": "2.16.578.1.12.4.1.2.101",
+      "system": "urn:oid:2.16.578.1.12.4.1.2.101",
       "value": "948554062"
     },
     "display": "Studentsamskipnaden i Oslo og Akershus"
@@ -24,7 +24,7 @@
   "owner": {
     "type": "Patient",
     "identifier": {
-      "system": "2.16.578.1.12.4.1.4.1",
+      "system": "urn:oid:2.16.578.1.12.4.1.4.1",
       "value": "13116900216"
     },
     "display": "Line Danser"
@@ -46,7 +46,7 @@
         ],
         "type": "Organization",
         "identifier": {
-          "system": "2.16.578.1.12.4.1.2.101",
+          "system": "urn:oid:2.16.578.1.12.4.1.2.101",
           "value": "948554062"
         },
         "display": "Studentsamskipnaden i Oslo og Akershus"

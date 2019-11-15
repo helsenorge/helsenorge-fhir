@@ -14,7 +14,7 @@
   <requester>
     <type value="Organization" />
     <identifier>
-      <system value="2.16.578.1.12.4.1.2.101" />
+      <system value="urn:oid:2.16.578.1.12.4.1.2.101" />
       <value value="948554062" />
     </identifier>
     <display value="Studentsamskipnaden i Oslo og Akershus" />
@@ -22,7 +22,7 @@
   <owner>
     <type value="Patient" />
     <identifier>
-      <system value="2.16.578.1.12.4.1.4.1" />
+      <system value="urn:oid:2.16.578.1.12.4.1.4.1" />
       <value value="13116900216" />
     </identifier>
     <display value="Line Danser" />
@@ -40,7 +40,7 @@
       </extension>
       <type value="Organization" />
       <identifier>
-        <system value="2.16.578.1.12.4.1.2.101" />
+        <system value="urn:oid:2.16.578.1.12.4.1.2.101" />
         <value value="948554062" />
       </identifier>
       <display value="Studentsamskipnaden i Oslo og Akershus" />
