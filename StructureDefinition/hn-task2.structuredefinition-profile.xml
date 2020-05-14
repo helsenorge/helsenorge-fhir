@@ -1492,7 +1492,7 @@
       <definition value="The request being actioned or the resource being manipulated by this task." />
       <comment value="If multiple resources need to be manipulated, use sub-tasks.  (This ensures that status can be tracked independently for each referenced resource.)." />
       <requirements value="Used to identify the thing to be done." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Task.focus" />
@@ -1520,7 +1520,6 @@
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
         <source value="Reference" />
       </constraint>
-      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -1746,7 +1745,7 @@
       <short value="Text alternative for the resource" />
       <definition value="Plain text narrative that identifies the resource in addition to the resource reference.&#xD;&#xA;&#xD;&#xA;Helsenorge.no uses the plain text narrative as a title for the task." />
       <comment value="This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Reference.display" />
@@ -1765,7 +1764,6 @@
         <xpath value="@value|f:*|h:div" />
         <source value="Element" />
       </constraint>
-      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -4791,7 +4789,7 @@
     </element>
     <element id="Task.focus">
       <path value="Task.focus" />
-      <mustSupport value="true" />
+      <min value="1" />
     </element>
     <element id="Task.focus.reference">
       <path value="Task.focus.reference" />
@@ -4800,7 +4798,7 @@
     <element id="Task.focus.display">
       <path value="Task.focus.display" />
       <definition value="Plain text narrative that identifies the resource in addition to the resource reference.&#xD;&#xA;&#xD;&#xA;Helsenorge.no uses the plain text narrative as a title for the task." />
-      <mustSupport value="true" />
+      <min value="1" />
     </element>
     <element id="Task.authoredOn">
       <path value="Task.authoredOn" />
